@@ -1,7 +1,4 @@
-on:
-  push:
-    tags:
-      - 'v*.*.*'
+on: on: [push]
 jobs:
   test:
     runs-on: ubuntu-latest
