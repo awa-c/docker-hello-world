@@ -26,5 +26,5 @@ jobs:
       run: |
         docker build . --tag ghcr.io/${{ github.repository }}:latest --tag ghcr.io/${{ github.repository }}:$RELEASE_VERSION
         docker run ghcr.io/${{ github.repository }}:latest
-        docker push ghcr.io/${{ github.repository }}:latest 
+        docker push --all-tags ghcr.io/${{ github.repository }}
 
